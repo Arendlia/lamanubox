@@ -60,7 +60,7 @@ function CalculPage() {
     if (exist) {
       setCartItems(
         cartItems.map((x) =>
-          x.id === product.id ? { ...exist, high: exist.high + 0.5 } : x
+          x.id === product.id && x.high <2.5 ? { ...exist, high: exist.high + 0.5 } : x
         )
       );
     } else {
@@ -74,7 +74,7 @@ function CalculPage() {
     } else {
       setCartItems(
         cartItems.map((x) =>
-          x.id === product.id ? { ...exist, high: exist.high - 0.5 } : x
+          x.id === product.id? { ...exist, high: exist.high - 0.5 } : x
         )
       );
     }

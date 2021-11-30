@@ -9,7 +9,7 @@ function ItemCard(props) {
         <div className="card-body">
             <h5 class="card-title">{product.title}</h5>
             <p class="card-text">{product.desc}</p>
-            <button className="btn btn-success"  onClick={() => onAdd(product)}>Ajouter au box</button>
+            <button className="btn btn-primary"  onClick={() => onAdd(product)}>Ajouter au box</button>
             </div>
     </div>
     </div>
